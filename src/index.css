@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página com o fundo escuro original */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8fafc;
+  background-color: #020617; /* Fundo escuro/preto */
+}
+
+/* Remove sublinhado padrão dos links */
+a {
+  text-decoration: none;
+}
+
+/* Container principal da aplicação */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.page-intro {
+  text-align: center;
+  max-width: 500px;
+}
+
+.page-intro h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tag {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Estilização do Cartão de Perfil */
+.profile-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  background: linear-gradient(135deg, #3b82f6, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.profile-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.profile-header h2 {
+  font-size: 1rem;
+  color: #94a3b8;
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+
+.location {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.bio {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Bloco de experiência */
+.info-grid {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item strong {
+  display: block;
+  color: #f1f5f9;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Habilidades em tags */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skill-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Botão Link */
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button-link.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.button-link.primary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}

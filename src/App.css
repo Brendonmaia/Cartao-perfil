@@ -1,0 +1,28 @@
+import ProfileCard from "./ProfileCard";
+
+function App() {
+  const profile = {
+    initials: "BM",
+    name: "Brendon Maia de Figueiredo",
+    role: "Estudante de Análise e Desenvolvimento de Sistemas",
+    location: "São Paulo-SP",
+    bio: "Sempre buscando aprendizado.",
+    experience: "Buscando a primeira experiência no mercado de tecnologia",
+    skills: ["Figma", "HTML5", "CSS3", "JavaScript", "Bootstrap", "ReactJS", "NodeJS", "MySQL"],
+    links: { github: "https://github.com/Brendonmaia" }
+  };
+
+  return (
+    <div className="app">
+      <main className="page-intro">
+        <span className="tag">Projeto ReactJS</span>
+        <h1>Cartão de Perfil Profissional</h1>
+        <p>Um projeto simples, bonito e ideal para praticar React!</p>
+      </main>
+
+      <ProfileCard profile={profile} />
+    </div>
+  );
+}
+
+export default App;
